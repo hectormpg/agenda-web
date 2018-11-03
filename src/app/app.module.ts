@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyNavComponent } from './my-nav/my-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 // tslint:disable-next-line:max-line-length
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatGridListModule, MatCardModule, MatMenuModule, MatTreeModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatGridListModule, MatCardModule, MatMenuModule, MatTreeModule, MatInputModule, MatSelectModule, MatRadioModule } from '@angular/material';
 import { MyTableComponent } from './my-table/my-table.component';
 import { MyDashComponent } from './my-dash/my-dash.component';
 import { MyTreeComponent } from './my-tree/my-tree.component';
 import { MyDdComponent } from './my-dd/my-dd.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { NewFormComponent } from './new-form/new-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MyTableComponent,
     MyDashComponent,
     MyTreeComponent,
-    MyDdComponent
+    MyDdComponent,
+    NewFormComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,11 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatCardModule,
     MatMenuModule,
     MatTreeModule,
-    DragDropModule
+    DragDropModule,
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
