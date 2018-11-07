@@ -40,8 +40,10 @@
                     </mat-form-field>
                 </div>
                 <div class="col">
+
                     <mat-form-field class="full-width">
                         <input matInput placeholder="Teléfono" formControlName="phone">
+                        <mat-icon matSuffix>phone</mat-icon>
                         <mat-error *ngIf="personForm.controls['phone'].hasError('required')">
                             Teléfono <strong>requerido</strong>
                         </mat-error>
